@@ -1,0 +1,141 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ background:url("photo2.jpg");
+ border-radius: 15px 6px 15px 6px ;
+ text-align: center;
+}
+/* HEADER + NAVIGATION */
+header{
+ background:url("photo.jpg");
+ color:#040C3B;
+ padding:20px;
+ text-align:center;
+}
+header img{
+	display:flex;
+	height:2.5vw;
+	  float: left;
+  margin-right: 20px;
+ border-radius: 15px 15px 15px 15px ;
+}
+nav{
+ background:#040C3B;
+ overflow:hidden;
+}
+nav ul{
+ list-style:none;
+ display:flex;
+
+}
+nav ul li{
+ position:relative;
+}
+nav ul li a{
+ color:#EFEFEF;
+ padding:15px 20px;
+ display:block;
+ text-decoration:none;
+}
+nav ul li a:hover{
+ background:#005fa6;
+}
+/* Sous-menus */
+nav ul ul{
+ display:none;
+ position:absolute;
+ background:##EFEFEF;
+ top:50px;
+}
+nav ul li:hover ul{
+ display:block;
+}
+nav ul ul li{
+ width:180px;
+}
+/* SLIDER IMAGES */
+.slider{
+ top:0;
+ left:0;
+ width:100vw;
+ height:350px;
+ overflow:hidden;
+ flex-direction: row;
+ display: flex;
+  border-radius: 150px 150px 150px 150px ;
+}
+.slider img{
+ width:100vw;
+ height:350px;
+ animation:slide 18s infinite;
+ object-fit:row;
+  flex-shrink: 0;
+  border-radius: 150px 150px 150px 150px ;
+ 
+}
+video{
+	height:400px;
+	width:80%;
+}
+@keyframes slide{
+ 0% {transform: translateX(0);}
+ 33% {transform: translateX(-100%);}
+ 66% {transform: translateX(-200%);}
+ 100% {transform: translateX(0);}
+}
+/* LAYOUT */
+.container{
+	display:flex;
+ padding:20px;
+
+}
+.catalogue main{
+	justify-content: center;
+	display: inline;
+	text-align: justify;
+	
+	
+}
+.catalogue form{
+	justify-content: center;
+	
+}
+.catalogue img{
+	border-radius:15px 15px 15px 15px;
+	width:40%;
+	
+	box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+	
+}
+aside{
+ color:#FFFFFF;
+ width:25%;
+ background-image:url("photo3.jpg");
+ background-attachment:scroll;
+ padding:15px;
+ margin-right:20px;
+}
+main{
+ width:75%;
+}
+main,p {
+	font-family:"Garamond";
+	font-size: 1.2em;
+}
+	/* FOOTER */
+footer{
+ background-image:url("photo.jpg");
+ color:#040440;
+ padding:20px;
+ margin-top:30px;
+ text-align:center;
+}
+footer input, footer textarea, footer button{
+ width:80%;
+ padding:10px;
+ margin:5px;
+}
